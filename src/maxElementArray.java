@@ -23,5 +23,17 @@ public class maxElementArray {
         System.out.println(sum);
         int average = sum/ n;
         System.out.println(average);
+
+
+        // for maximum element
+//        int max = 0; agar negative huye toh nahi kaam krega
+        int max = arr[0];
+        // initialise kr diya max ko first element se of array
+        for (int j = 0; j<n; j++){
+            if (arr[j]>max){
+                max = arr[j];
+            }
+        }
+        System.out.println(max);
     }
 }
